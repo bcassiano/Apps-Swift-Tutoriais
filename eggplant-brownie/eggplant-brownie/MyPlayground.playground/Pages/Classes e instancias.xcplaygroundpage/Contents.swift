@@ -2,13 +2,13 @@
 
 import UIKit
 
-let nome: String = "Macarrão"
-let felicidade: String = "5"
-
-//Criar segunda refeição
-
-let nome2: String = "Churros"
-let felicidade2: String = "4"
+//let nome: String = "Macarrão"
+//let felicidade: String = "5"
+//
+////Criar segunda refeição
+//
+//let nome2: String = "Churros"
+//let felicidade2: String = "4"
 
 //------------------------------------
 
@@ -27,14 +27,34 @@ class Refeicao { //Estrutura ou classe que contenham as caracteristicas
 //let refeicao: Refeicao = Refeicao()
 // ou
 let refeicao = Refeicao()
+refeicao.nome = "Macarrao"
 
+//Cuidado com o force unWarap
+//print(refeicao.nome!)
 
-class Refeicao2 {
-    var nome: String = "Churros"
-    var felicidade: String = "4"
+if refeicao.nome != nil {
+    print(refeicao.nome!)
 }
 
-var refeicao2 = Refeicao2()
-print(refeicao2.nome)
+// boa praticas para extrair valores opcionais
 
+if let nome = refeicao.nome {
+    print(nome)
+}
+
+// guard let
+
+func exibeNomeDaRefeicao() {
+    if let nome = refeicao.nome{
+        print(nome)
+    }
+    
+    guard let nome = refeicao.nome else {
+        return
+    }
+    
+    print(nome)
+}
+
+exibeNomeDaRefeicao()
 //: [Next](@next)
