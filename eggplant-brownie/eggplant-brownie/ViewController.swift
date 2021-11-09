@@ -8,11 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+    @IBOutlet var nomeTextField: UITextField!
+    @IBOutlet var felicidadeTextField: UITextField!
+    
+    @IBAction func Adicionar(_ sender: Any) {
+        var nome = nomeTextField.text
+        var felicidade = felicidadeTextField.text
+        print("Comi \(nome) e fiquei com felicidade \(felicidade)!")
     }
+    
 
 
 }
