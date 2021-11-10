@@ -16,7 +16,7 @@ import UIKit
 //Criar uma classe que agrupe essas caracteristicas
 
 class Refeicao { //Estrutura ou classe que contenham as caracteristicas
-    var nome: String?
+    var nome: String? // Quando eu nao quiser o valor posso usar o "?" para opcional
     var felicidade: String?
     
     
@@ -27,29 +27,26 @@ class Refeicao { //Estrutura ou classe que contenham as caracteristicas
 //let refeicao: Refeicao = Refeicao()
 // ou
 let refeicao = Refeicao()
-refeicao.nome = "Macarrao"
+    refeicao.nome = "Macarrão"
 
-//Cuidado com o force unWarap
+//Cuidado com o forced unWarap
 //print(refeicao.nome!)
-
-if refeicao.nome != nil {
+if refeicao.nome != nil { //não é o mais comum de se utilizar
     print(refeicao.nome!)
 }
 
 // boa praticas para extrair valores opcionais
-
-if let nome = refeicao.nome {
+if let nome = refeicao.nome { //let cria uma variavel com o mesmo nome caso ela exista
     print(nome)
 }
 
 // guard let
-
 func exibeNomeDaRefeicao() {
-    if let nome = refeicao.nome{
+    if let nome = refeicao.nome{ //ao criar o if let é possível localizar apenas no scopo do IF
         print(nome)
     }
     
-    guard let nome = refeicao.nome else {
+    guard let nome = refeicao.nome else { // no Caso do guard let pode ser utilizado for do scopo
         return
     }
     
@@ -57,4 +54,14 @@ func exibeNomeDaRefeicao() {
 }
 
 exibeNomeDaRefeicao()
+
+let numero = Int("5")
+if let n = numero {
+    print (n)
+}else{
+print("erro ao converter string para INT")
+    
+}
+
+
 //: [Next](@next)
