@@ -5,10 +5,14 @@ import Foundation
 import UIKit
 
 class Refeicao {
+    
+    // MARK: - Atributos
 var nome: String
 var felicidade: String
+    
+    // MARK: - Construtor / Inicializador
 
-init (nome: String, felicidade: String){
+init (nome: String, felicidade: String) {
     self.nome = nome
     self.felicidade = felicidade
     

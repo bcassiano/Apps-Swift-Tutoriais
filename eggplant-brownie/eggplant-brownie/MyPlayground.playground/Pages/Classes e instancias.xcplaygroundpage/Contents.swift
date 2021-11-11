@@ -26,7 +26,7 @@ class Refeicao { //Estrutura ou classe que contenham as caracteristicas
 
 //let refeicao: Refeicao = Refeicao()
 // ou
-let refeicao = Refeicao()
+let refeicao = Refeicao()// <-- este é o tipo da minha class"Refeição()"
     refeicao.nome = "Macarrão"
 
 //Cuidado com o forced unWarap
@@ -46,7 +46,7 @@ func exibeNomeDaRefeicao() {
         print(nome)
     }
     
-    guard let nome = refeicao.nome else { // no Caso do guard let pode ser utilizado for do scopo
+    guard let nome = refeicao.nome else { // no Caso do guard let pode ser utilizado fora do scopo
         return
     }
     

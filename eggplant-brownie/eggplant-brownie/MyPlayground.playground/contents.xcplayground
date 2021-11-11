@@ -3,6 +3,7 @@
     <pages>
         <page name='Classes e instancias'/>
         <page name='Funs e Arrays'/>
-        <page name='metodo cconstrutor init'/>
+        <page name='metodo construtor init'/>
+        <page name='Classe-item-arrays em classes de trabalho-11-11-21'/>
     </pages>
 </playground>
