@@ -39,7 +39,7 @@ class Item {
     init(nome: String, calorias: Double){
         self.nome = nome
         self.calorias = calorias
-        print(nome)
+        //print(nome)
     }
     
     
