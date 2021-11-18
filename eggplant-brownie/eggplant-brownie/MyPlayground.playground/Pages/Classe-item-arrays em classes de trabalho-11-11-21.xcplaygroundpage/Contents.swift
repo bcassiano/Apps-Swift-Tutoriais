@@ -55,7 +55,7 @@ refeicao.itens.append(feijao)
 refeicao.itens.append(carne)
 
 print(refeicao.nome)
-if let primeiroItemDaLista = refeicao.itens.first{
+if let primeiroItemDaLista = refeicao.itens.first {
     print(primeiroItemDaLista.nome)
 }
 
