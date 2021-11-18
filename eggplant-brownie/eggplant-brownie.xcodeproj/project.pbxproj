@@ -13,6 +13,8 @@
 		F41C6458272D67A100B2C404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41C6456272D67A100B2C404 /* Main.storyboard */; };
 		F41C645A272D67B500B2C404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41C6459272D67B500B2C404 /* Assets.xcassets */; };
 		F41C645D272D67B500B2C404 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41C645B272D67B500B2C404 /* LaunchScreen.storyboard */; };
+		F49DA46627466074005FAC60 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49DA46527466074005FAC60 /* Refeicao.swift */; };
+		F49DA46827466102005FAC60 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49DA46727466102005FAC60 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		F41C645C272D67B500B2C404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F41C645E272D67B600B2C404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F49471D92733D90B00D868B0 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F49DA46527466074005FAC60 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
+		F49DA46727466102005FAC60 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +62,41 @@
 			isa = PBXGroup;
 			children = (
 				F41C6450272D67A100B2C404 /* AppDelegate.swift */,
+				F49DA469274661C0005FAC60 /* Models */,
+				F49DA46B2746622A005FAC60 /* Views */,
+				F49DA46A274661EC005FAC60 /* Controllers */,
 				F41C6452272D67A100B2C404 /* SceneDelegate.swift */,
-				F41C6454272D67A100B2C404 /* ViewController.swift */,
-				F41C6456272D67A100B2C404 /* Main.storyboard */,
 				F41C6459272D67B500B2C404 /* Assets.xcassets */,
 				F49471D92733D90B00D868B0 /* MyPlayground.playground */,
 				F41C645B272D67B500B2C404 /* LaunchScreen.storyboard */,
 				F41C645E272D67B600B2C404 /* Info.plist */,
 			);
 			path = "eggplant-brownie";
+			sourceTree = "<group>";
+		};
+		F49DA469274661C0005FAC60 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F49DA46527466074005FAC60 /* Refeicao.swift */,
+				F49DA46727466102005FAC60 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F49DA46A274661EC005FAC60 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F41C6454272D67A100B2C404 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F49DA46B2746622A005FAC60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F41C6456272D67A100B2C404 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F49DA46827466102005FAC60 /* Item.swift in Sources */,
 				F41C6455272D67A100B2C404 /* ViewController.swift in Sources */,
 				F41C6451272D67A100B2C404 /* AppDelegate.swift in Sources */,
 				F41C6453272D67A100B2C404 /* SceneDelegate.swift in Sources */,
+				F49DA46627466074005FAC60 /* Refeicao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

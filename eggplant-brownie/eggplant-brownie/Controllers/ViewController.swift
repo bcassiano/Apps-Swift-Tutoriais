@@ -13,12 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet var felicidadeTextField: UITextField?
     
     @IBAction func Adicionar(_ sender: Any) {
-        var nome = nomeTextField?.text
-        var felicidade = felicidadeTextField?.text
-        print("Comi \(nome) e fiquei com felicidade \(felicidade)!")
+        let nome = nomeTextField?.text
+        let felicidade : Int! = Int(felicidadeTextField!.text!)
+        
+        let refeicao = Refeicao(nome: nome!, felicidade: felicidade)
+        
+        print("Comi \(refeicao.nome) e fiquei com felicidade \(refeicao.felicidade)!")
     }
-    
-
-
 }
 
