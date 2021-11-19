@@ -7,9 +7,9 @@
 
 import UIKit
 
-class RefeicoesTablaViewController: UITableViewController {
+class RefeicoesTableViewController: UITableViewController {
     
-    let refeicoes = [Refeicao(nome: "Macarrão", felicidade: 5), Refeicao(nome: "Hamburguer", felicidade: 5), Refeicao(nome: "Ovo", felicidade: 5)]
+    var refeicoes = [Refeicao(nome: "Macarrão", felicidade: 5), Refeicao(nome: "Hamburguer", felicidade: 5), Refeicao(nome: "Ovo", felicidade: 5)]
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return refeicoes.count
     }
@@ -21,5 +21,17 @@ class RefeicoesTablaViewController: UITableViewController {
         celula.textLabel?.text = refeicao.nome
         
         return celula
+    }
+    
+    func add(_ refeicao: Refeicao){
+        print("metodo add")
+        refeicoes.append(refeicao)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? ViewController {
+            viewController.tableViewController = self
+        }
+            
     }
 }
