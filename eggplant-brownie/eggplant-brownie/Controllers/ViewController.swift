@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         print("Comi \(refeicao.nome) e fiquei com felicidade \(refeicao.felicidade)!")
         
         tableViewController?.add(refeicao)
-        navigationController?.popViewController(animated: true)
+        navigationController?.popViewController(animated: true) //adiciona nova tela e desaparece com ele. Não empilha.
     }
 }
 
