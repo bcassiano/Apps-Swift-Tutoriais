@@ -50,7 +50,7 @@
                     <navigationItem key="navigationItem" id="Zi5-Fw-1Qq">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="XfZ-vU-4H5">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="tLM-fP-ErO"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="adicionar" id="tLM-fP-ErO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
