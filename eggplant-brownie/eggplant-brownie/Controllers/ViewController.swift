@@ -7,14 +7,19 @@
 
 import UIKit
 
+protocol ViewControllerDelegate {
+    func add(_ refeicao: Refeicao)
+}
+
 class ViewController: UIViewController {
     
-    var tableViewController: RefeicoesTableViewController?
+    var delegate: ViewControllerDelegate?
     
     @IBOutlet var nomeTextField: UITextField?
     @IBOutlet var felicidadeTextField: UITextField?
     
     @IBAction func Adicionar(_ sender: Any) {
+        
         
 //        if let nomeDaRefeicao = nomeTextField?.text, let felicidadeDaRefeicao = felicidadeTextField?.text {
 //            let nome = nomeDaRefeicao
@@ -37,7 +42,7 @@ class ViewController: UIViewController {
         let refeicao = Refeicao(nome: nomeDaRefeicao, felicidade: felicidade)
         print("Comi \(refeicao.nome) e fiquei com felicidade \(refeicao.felicidade)!")
         
-        tableViewController?.add(refeicao)
+        delegate?.add(refeicao)
         navigationController?.popViewController(animated: true) //adiciona nova tela e desaparece com ele. Não empilha.
     }
 }
