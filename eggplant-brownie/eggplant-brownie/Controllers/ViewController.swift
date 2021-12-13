@@ -67,10 +67,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 itensSelecionados.remove(at: position)
                 
                 //teste
-                
-                for itemSelecionado in itensSelecionados {
-                    print(itemSelecionado.nome)
-                }
+//
+//                for itemSelecionado in itensSelecionados {
+//                    print(itemSelecionado.nome)
+//                }
             }
         }
         
