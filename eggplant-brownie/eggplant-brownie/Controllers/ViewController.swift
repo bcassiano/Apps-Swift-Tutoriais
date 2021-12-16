@@ -39,7 +39,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     @objc func adicionarItens() {
-        print("Adicionar novo item da lista")
+//        print("Adicionar novo item da lista")
+        let adicionarItensViewController = AdicionarItensViewController()
+        navigationController?.pushViewController(adicionarItensViewController, animated: true)
     }
     
     

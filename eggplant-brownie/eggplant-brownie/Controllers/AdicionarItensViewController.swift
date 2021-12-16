@@ -9,21 +9,19 @@ import UIKit
 
 class AdicionarItensViewController: UIViewController {
 
+    //MARK: - Metodo View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - IBAction
+    
+    @IBAction func adicionarItem(_ sender: Any) {
+        // navegar para proxima tela: navigationController.push()
+        // voltar para tela anterior: navigationController.pop()
+        let item = Item(nome: <#T##String#>, calorias: <#T##Double#>)
+        navigationController?.popViewController(animated: true)
+        
     }
-    */
-
 }
