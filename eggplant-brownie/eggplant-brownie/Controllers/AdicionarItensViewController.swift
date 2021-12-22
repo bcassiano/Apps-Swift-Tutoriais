@@ -49,7 +49,7 @@ class AdicionarItensViewController: UIViewController {
         // navegar para proxima tela: navigationController.push()
         // voltar para tela anterior: navigationController.pop()
         let item = Item(nome: nome, calorias: numeroDeCalorias)
-            delegate?.add(item)
+            delegate?.add(item) // neste caso a opcional"delegate?"funciona caso haja valor em "delegate ele continua .add se não, ele para e não faz nada e não tem crash no app. Este pode ser utilizado no lugar de if let e guard let"
         navigationController?.popViewController(animated: true)
         
         }
