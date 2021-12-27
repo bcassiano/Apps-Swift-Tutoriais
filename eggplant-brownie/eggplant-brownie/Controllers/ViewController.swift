@@ -51,16 +51,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if let tableView = itensTableView {
             itensTableView.reloadData()
         } else {
-            let alerta = UIAlertController(title: "Desculpe", message: "Não foi possível atualizar a tabela", preferredStyle: .alert)
-            let ok = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-            alerta.addAction(ok)
-            present(alerta, animated: true, completion: nil)
             
-        }
-        
+            Alerta(controller: self).exibe(mensagem: "Erro 404")       }
+    
     }
-    
-    
     //MARK: - UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
