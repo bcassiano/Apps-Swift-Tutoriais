@@ -37,25 +37,12 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
         if gesture.state == .began{
             let celula = gesture.view as!UITableViewCell
             guard let indexPath = tableView.indexPath(for: celula) else { return }
-           
-            let refeicao = refeicoes[indexPath.row]
+            let refeicao = refeicoes[indexPath.row] // responsabilidade de recupearar refeicao onde foi feito o Longpress
             
-            let alerta = UIAlertController(title: refeicao.nome, message: refeicao.detalhes(), preferredStyle: .alert)
-            
-            let botaoCancelar = UIAlertAction(title: "Cancelar", style: .cancel) //neste caso posso a apagar o nil já que ele é opcional de acordo com o Handler
-            alerta.addAction(botaoCancelar)
-            
-            let botaoRemover = UIAlertAction(title: "Remover", style: .destructive, handler: { alerta in
+            RemoveRefeicaoViewController(controller: self).exibe(refeicao, handler: { alert in
                 self.refeicoes.remove(at: indexPath.row)
                 self.tableView.reloadData()
-                
             })
-            
-            //Clouser
-            
-            alerta.addAction(botaoRemover)
-            
-            present(alerta, animated: true, completion: nil)
         }
     }
     

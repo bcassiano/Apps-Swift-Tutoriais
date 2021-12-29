@@ -16,6 +16,7 @@
 		F4361F61276A009F000C27CD /* AdicionarItensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4361F5F276A009F000C27CD /* AdicionarItensViewController.swift */; };
 		F4361F62276A009F000C27CD /* AdicionarItensViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4361F60276A009F000C27CD /* AdicionarItensViewController.xib */; };
 		F48DFCE52779ED6500793E9F /* Alerta.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DFCE42779ED6500793E9F /* Alerta.swift */; };
+		F48DFCE7277CD08E00793E9F /* RemoveRefeicaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DFCE6277CD08E00793E9F /* RemoveRefeicaoViewController.swift */; };
 		F49DA46627466074005FAC60 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49DA46527466074005FAC60 /* Refeicao.swift */; };
 		F49DA46827466102005FAC60 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49DA46727466102005FAC60 /* Item.swift */; };
 		F4F4BCE42747195700A3D67D /* RefeicoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4BCE32747195700A3D67D /* RefeicoesTableViewController.swift */; };
@@ -33,6 +34,7 @@
 		F4361F5F276A009F000C27CD /* AdicionarItensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdicionarItensViewController.swift; sourceTree = "<group>"; };
 		F4361F60276A009F000C27CD /* AdicionarItensViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdicionarItensViewController.xib; sourceTree = "<group>"; };
 		F48DFCE42779ED6500793E9F /* Alerta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerta.swift; sourceTree = "<group>"; };
+		F48DFCE6277CD08E00793E9F /* RemoveRefeicaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveRefeicaoViewController.swift; sourceTree = "<group>"; };
 		F49471D92733D90B00D868B0 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F49DA46527466074005FAC60 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
 		F49DA46727466102005FAC60 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				F41C6454272D67A100B2C404 /* ViewController.swift */,
 				F4F4BCE32747195700A3D67D /* RefeicoesTableViewController.swift */,
 				F4361F5F276A009F000C27CD /* AdicionarItensViewController.swift */,
+				F48DFCE6277CD08E00793E9F /* RemoveRefeicaoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				F48DFCE52779ED6500793E9F /* Alerta.swift in Sources */,
 				F49DA46827466102005FAC60 /* Item.swift in Sources */,
 				F41C6455272D67A100B2C404 /* ViewController.swift in Sources */,
+				F48DFCE7277CD08E00793E9F /* RemoveRefeicaoViewController.swift in Sources */,
 				F4361F61276A009F000C27CD /* AdicionarItensViewController.swift in Sources */,
 				F41C6451272D67A100B2C404 /* AppDelegate.swift in Sources */,
 				F4F4BCE42747195700A3D67D /* RefeicoesTableViewController.swift in Sources */,
