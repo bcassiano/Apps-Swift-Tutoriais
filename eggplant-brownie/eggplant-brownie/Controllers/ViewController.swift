@@ -99,6 +99,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
+    func recuperaRefeicaoDoFormulario() -> Refeicao? {
+        guard let nomeDaRefeicao = nomeTextField?.text else {
+//            Alerta(controller: self).exibe(mensagem: "Erro ao ler campo nome")
+            return nil
+            
+        }
+        
+        guard let felicidadeDaRefeicao = felicidadeTextField?.text, let felicidade = Int(felicidadeDaRefeicao) else {
+//            Alerta(controller: self).exibe(mensagem: "Erro ao ler campo felicidade")
+            return nil
+            
+        }
+        
+        let refeicao = Refeicao(nome: nomeDaRefeicao, felicidade: felicidade, itens: itensSelecionados)
+        
+        refeicao.itens = itensSelecionados
+        
+        return refeicao
+    }
+    
     //MARK: - IBActions
     
     @IBAction func Adicionar(_ sender: Any) {
@@ -115,21 +135,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 //            }
 //
 //        }
-        guard let nomeDaRefeicao = nomeTextField?.text else {
+        
+                
+        guard let refeicao = recuperaRefeicaoDoFormulario() else {
             return
         }
-        guard let felicidadeDaRefeicao = felicidadeTextField?.text, let felicidade = Int(felicidadeDaRefeicao) else {
-            return
-        }
-        
-        let refeicao = Refeicao(nome: nomeDaRefeicao, felicidade: felicidade, itens: itensSelecionados)
-        
-        refeicao.itens = itensSelecionados
-        
-        print("Comi \(refeicao.nome) e fiquei com felicidade \(refeicao.felicidade)!")
-        
         delegate?.add(refeicao)
         navigationController?.popViewController(animated: true) //adiciona nova tela e desaparece com ele. Não empilha.
+        Alerta(controller: self).exibe(mensagem: "Erro ao ler dados do formulário")
     }
 }
 

@@ -37,23 +37,28 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
         if gesture.state == .began{
             let celula = gesture.view as!UITableViewCell
             guard let indexPath = tableView.indexPath(for: celula) else { return }
+           
             let refeicao = refeicoes[indexPath.row]
-            
-            
-//            var mensagem = "Felicidade: \(refeicao.felicidade)"
-//
-//            for item in refeicao.itens {
-//                mensagem += ", \(item.nome) - calorias: \(item.calorias)"
-//            } Refatorando e atribuindo a nova classe para que a ViewController não tenha tantas responsabilidades - Sempre pensar se é realmente de resposabilidade da ViewContrller. -> enviado para model Refeicao.
             
             let alerta = UIAlertController(title: refeicao.nome, message: refeicao.detalhes(), preferredStyle: .alert)
             
-            let botaoCancelar = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+            let botaoCancelar = UIAlertAction(title: "Cancelar", style: .cancel) //neste caso posso a apagar o nil já que ele é opcional de acordo com o Handler
             alerta.addAction(botaoCancelar)
+            
+            let botaoRemover = UIAlertAction(title: "Remover", style: .destructive, handler: { alerta in
+                self.refeicoes.remove(at: indexPath.row)
+                self.tableView.reloadData()
+                
+            })
+            
+            //Clouser
+            
+            alerta.addAction(botaoRemover)
             
             present(alerta, animated: true, completion: nil)
         }
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
