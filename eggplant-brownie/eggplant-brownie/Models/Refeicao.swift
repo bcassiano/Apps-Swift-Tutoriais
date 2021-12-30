@@ -7,8 +7,8 @@
 
 import UIKit
 
-class Refeicao: NSObject {
-    
+class Refeicao: NSObject, NSCoding {
+
         // MARK: - Atributos
         
         let nome: String
@@ -25,6 +25,18 @@ class Refeicao: NSObject {
             
         }
 
+    // Mark: - NSCoding
+    
+    func encode(with coder: NSCoder) {
+        coder.encode(nome, forKey: "nome")
+        coder.encode(felicidade, forKey: "felicidade")
+        coder.encode(itens, forKey: "itens")
+    }
+    
+    required init?(coder: NSCoder) {
+        <#code#>
+    }
+    
     // MARK: - Metodos
 
     func totalDeCalorias() -> Double {
