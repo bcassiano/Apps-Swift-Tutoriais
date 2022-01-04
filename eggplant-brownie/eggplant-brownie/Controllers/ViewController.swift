@@ -49,12 +49,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func add(_ item: Item) {
         itens.append(item)
         if let tableView = itensTableView {
-            itensTableView.reloadData()
+            tableView.reloadData()
         } else {
+            Alerta(controller: self).exibe(mensagem: "Erro ao atualizar tabela")
             
-            Alerta(controller: self).exibe(mensagem: "Erro 404")       }
-    
+        }
+        do {
+            let dados = try NSKeyedArchiver.archivedData(withRootObject: itens, requiringSecureCoding: false)
+            guard let caminho = recuperaDiretorio() else { return }
+            try dados.write(to: caminho)
+        } catch {
+            print(error.localizedDescription)
+        }
+        
     }
+    
+    func recuperaDiretorio() -> URL? {
+        guard let diretorio = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else{ return nil }
+        let caminho = diretorio.appendingPathComponent("itens")
+        
+        return caminho
+    }
+    
     //MARK: - UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
