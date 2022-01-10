@@ -42,7 +42,7 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
         
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(mostrarDetalhes(_:)))
         celula.addGestureRecognizer(longPress)
-
+        
         return celula
     }
     

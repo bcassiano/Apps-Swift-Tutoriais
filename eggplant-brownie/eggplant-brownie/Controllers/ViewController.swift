@@ -38,6 +38,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         let botaoAdicionaItem = UIBarButtonItem(title: "adicionar", style: .plain, target: self, action: #selector(adicionarItens))
         navigationItem.rightBarButtonItem = botaoAdicionaItem
+        
+        do {
+            
+        } catch {
+            
+            print(error.localizedDescription)
+        }
+    
+        guard let diretorio = recuperaDiretorio() else { return }
+        let dados = Data(contentsOf: diretorio)
+        
+        NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(dados)
+    
     }
     
     @objc func adicionarItens() {
