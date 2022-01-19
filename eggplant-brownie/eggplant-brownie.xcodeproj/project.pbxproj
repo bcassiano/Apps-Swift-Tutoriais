@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F418ED53279807CB0025C7FC /* RefeicaoDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F418ED52279807CA0025C7FC /* RefeicaoDao.swift */; };
+		F418ED5527980E5E0025C7FC /* ItemDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F418ED5427980E5D0025C7FC /* ItemDao.swift */; };
 		F41C6451272D67A100B2C404 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C6450272D67A100B2C404 /* AppDelegate.swift */; };
 		F41C6453272D67A100B2C404 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C6452272D67A100B2C404 /* SceneDelegate.swift */; };
 		F41C6455272D67A100B2C404 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C6454272D67A100B2C404 /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F418ED52279807CA0025C7FC /* RefeicaoDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicaoDao.swift; sourceTree = "<group>"; };
+		F418ED5427980E5D0025C7FC /* ItemDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDao.swift; sourceTree = "<group>"; };
 		F41C644D272D67A100B2C404 /* eggplant-brownie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eggplant-brownie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41C6450272D67A100B2C404 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F41C6452272D67A100B2C404 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 				F49DA46527466074005FAC60 /* Refeicao.swift */,
 				F49DA46727466102005FAC60 /* Item.swift */,
 				F48DFCE42779ED6500793E9F /* Alerta.swift */,
+				F418ED52279807CA0025C7FC /* RefeicaoDao.swift */,
+				F418ED5427980E5D0025C7FC /* ItemDao.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -190,6 +196,8 @@
 				F49DA46827466102005FAC60 /* Item.swift in Sources */,
 				F41C6455272D67A100B2C404 /* ViewController.swift in Sources */,
 				F48DFCE7277CD08E00793E9F /* RemoveRefeicaoViewController.swift in Sources */,
+				F418ED5527980E5E0025C7FC /* ItemDao.swift in Sources */,
+				F418ED53279807CB0025C7FC /* RefeicaoDao.swift in Sources */,
 				F4361F61276A009F000C27CD /* AdicionarItensViewController.swift in Sources */,
 				F41C6451272D67A100B2C404 /* AppDelegate.swift in Sources */,
 				F4F4BCE42747195700A3D67D /* RefeicoesTableViewController.swift in Sources */,
