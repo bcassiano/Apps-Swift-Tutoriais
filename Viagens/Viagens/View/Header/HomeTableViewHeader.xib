@@ -14,83 +14,55 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRM-Ly-GCk" userLabel="Header View">
-                    <rect key="frame" x="-293" y="0.0" width="1000" height="250"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dRM-Ly-GCk" userLabel="Header View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alura Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jl-et-9qO">
-                            <rect key="frame" x="313" y="52" width="149" height="33"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alura Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jl-et-9qO" userLabel="Viagens">
+                            <rect key="frame" x="16" y="52" width="149" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="23"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" red="0.11764705882352941" green="0.23137254901960785" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="250" id="LC5-0O-K0Y"/>
-                        <constraint firstAttribute="width" constant="1000" id="SFS-3s-cTg"/>
-                        <constraint firstItem="1jl-et-9qO" firstAttribute="top" secondItem="dRM-Ly-GCk" secondAttribute="top" constant="52" id="tMn-H2-VOI"/>
-                    </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZlO-9i-aen" userLabel="Banner View">
-                    <rect key="frame" x="20" y="130" width="375" height="130"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZlO-9i-aen" userLabel="Banner View">
+                    <rect key="frame" x="20" y="130" width="374" height="143"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ard-Ne-H6g">
-                            <rect key="frame" x="0.0" y="0.0" width="200" height="130"/>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ard-Ne-H6g">
+                            <rect key="frame" x="0.0" y="0.0" width="193" height="143"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aproveite o verão, com:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ave-25-8xP">
-                                    <rect key="frame" x="16" y="14" width="168" height="62"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aproveite o verão, com:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ave-25-8xP">
+                                    <rect key="frame" x="16" y="5" width="177" height="86"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="22"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ofertas exclusivas, somente no nosso app!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xel-u5-zNQ">
-                                    <rect key="frame" x="16" y="82" width="168" height="34"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ofertas exclusivas, somente no nosso app!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xel-u5-zNQ">
+                                    <rect key="frame" x="16" y="99" width="177" height="36"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="12"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                             <color key="backgroundColor" red="0.31764705882352939" green="0.70196078431372544" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <constraints>
-                                <constraint firstItem="Ave-25-8xP" firstAttribute="leading" secondItem="Ard-Ne-H6g" secondAttribute="leading" constant="16" id="DAV-AN-Ew0"/>
-                                <constraint firstAttribute="trailing" secondItem="Ave-25-8xP" secondAttribute="trailing" constant="16" id="DBo-k3-8Z2"/>
-                                <constraint firstAttribute="trailing" secondItem="Xel-u5-zNQ" secondAttribute="trailing" constant="16" id="GTM-XY-1hc"/>
-                                <constraint firstItem="Ave-25-8xP" firstAttribute="top" secondItem="Ard-Ne-H6g" secondAttribute="top" constant="14" id="nzR-WX-acZ"/>
-                                <constraint firstAttribute="bottom" secondItem="Xel-u5-zNQ" secondAttribute="bottom" constant="14" id="pCP-4b-wyA"/>
-                                <constraint firstItem="Xel-u5-zNQ" firstAttribute="leading" secondItem="Ard-Ne-H6g" secondAttribute="leading" constant="16" id="vpJ-aa-x5C"/>
-                            </constraints>
                         </view>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferias" translatesAutoresizingMaskIntoConstraints="NO" id="6fw-30-299">
-                            <rect key="frame" x="199" y="0.0" width="176" height="130"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="176" id="agG-Ks-0n3"/>
-                            </constraints>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ferias" translatesAutoresizingMaskIntoConstraints="NO" id="6fw-30-299">
+                            <rect key="frame" x="193" y="0.0" width="181" height="143"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="130" id="0SB-cq-2YK"/>
-                        <constraint firstAttribute="bottom" secondItem="Ard-Ne-H6g" secondAttribute="bottom" id="GDZ-Rq-Vkn"/>
-                        <constraint firstItem="Ard-Ne-H6g" firstAttribute="leading" secondItem="ZlO-9i-aen" secondAttribute="leading" id="JcV-m6-JBJ"/>
-                        <constraint firstItem="Ard-Ne-H6g" firstAttribute="width" secondItem="ZlO-9i-aen" secondAttribute="width" multiplier="0.533333" id="KZ5-Zn-6QK"/>
-                        <constraint firstAttribute="trailing" secondItem="6fw-30-299" secondAttribute="trailing" id="MLs-4k-9nh"/>
-                        <constraint firstAttribute="bottom" secondItem="6fw-30-299" secondAttribute="bottom" id="SCM-fJ-MxZ"/>
-                        <constraint firstItem="6fw-30-299" firstAttribute="top" secondItem="ZlO-9i-aen" secondAttribute="top" id="VWw-WG-U4m"/>
-                        <constraint firstItem="Ard-Ne-H6g" firstAttribute="top" secondItem="ZlO-9i-aen" secondAttribute="top" id="mhD-Zg-PPa"/>
-                        <constraint firstItem="6fw-30-299" firstAttribute="width" secondItem="ZlO-9i-aen" secondAttribute="width" multiplier="0.469333" id="yjX-wP-3oQ"/>
-                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-            <constraints>
-                <constraint firstItem="ZlO-9i-aen" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="JkH-KF-cFK"/>
-                <constraint firstItem="dRM-Ly-GCk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Nly-Ks-Mok"/>
-                <constraint firstItem="ZlO-9i-aen" firstAttribute="bottom" secondItem="dRM-Ly-GCk" secondAttribute="bottom" constant="10" id="Tej-W9-lXg"/>
-                <constraint firstItem="1jl-et-9qO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="jx2-oM-XG3"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZlO-9i-aen" secondAttribute="trailing" constant="19" id="m3o-bA-kOh"/>
-                <constraint firstItem="dRM-Ly-GCk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tMc-bW-948"/>
-            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bannerImageView" destination="6fw-30-299" id="M6e-XO-yR5"/>
