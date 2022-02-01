@@ -14,23 +14,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dRM-Ly-GCk" userLabel="Header View">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alura Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jl-et-9qO" userLabel="Viagens">
-                            <rect key="frame" x="16" y="52" width="149" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="23"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" red="0.11764705882352941" green="0.23137254901960785" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZlO-9i-aen" userLabel="Banner View">
-                    <rect key="frame" x="20" y="130" width="374" height="143"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZlO-9i-aen" userLabel="Banner View">
+                    <rect key="frame" x="20" y="107" width="374" height="143"/>
                     <subviews>
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ard-Ne-H6g">
                             <rect key="frame" x="0.0" y="0.0" width="193" height="143"/>
@@ -59,10 +44,37 @@
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="143" id="5uh-B0-xMw"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRM-Ly-GCk" userLabel="Header View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alura Viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jl-et-9qO" userLabel="Viagens">
+                            <rect key="frame" x="16" y="52" width="149" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="23"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.11764705882352941" green="0.23137254901960785" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="ybw-JF-TWf"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dRM-Ly-GCk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GnT-vt-EQ0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZlO-9i-aen" secondAttribute="trailing" constant="20" id="IJO-cM-Hzt"/>
+                <constraint firstItem="ZlO-9i-aen" firstAttribute="bottom" secondItem="dRM-Ly-GCk" secondAttribute="bottom" id="Vqy-cC-mqF"/>
+                <constraint firstItem="dRM-Ly-GCk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ggY-Oh-2VD"/>
+                <constraint firstItem="ZlO-9i-aen" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="h0Z-i3-EGa"/>
+                <constraint firstItem="dRM-Ly-GCk" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="zgS-Hv-HRO"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bannerImageView" destination="6fw-30-299" id="M6e-XO-yR5"/>
