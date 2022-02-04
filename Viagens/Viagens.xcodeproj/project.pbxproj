@@ -22,6 +22,8 @@
 		F418ED6A279820DA0025C7FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F418ED68279820DA0025C7FC /* Main.storyboard */; };
 		F418ED6C279820EB0025C7FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F418ED6B279820EB0025C7FC /* Assets.xcassets */; };
 		F418ED6F279820EB0025C7FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F418ED6D279820EB0025C7FC /* LaunchScreen.storyboard */; };
+		F45642A727AD3C37005A8999 /* OfertaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45642A527AD3C37005A8999 /* OfertaTableViewCell.swift */; };
+		F45642A827AD3C37005A8999 /* OfertaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45642A627AD3C37005A8999 /* OfertaTableViewCell.xib */; };
 		F4E2DC29279A0EB300F57A1A /* HomeTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4E2DC28279A0EB100F57A1A /* HomeTableViewHeader.xib */; };
 		F4E2DC2B279A122600F57A1A /* HomeTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2DC2A279A122500F57A1A /* HomeTableViewHeader.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,8 @@
 		F418ED6B279820EB0025C7FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F418ED6E279820EB0025C7FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F418ED70279820EB0025C7FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F45642A527AD3C37005A8999 /* OfertaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaTableViewCell.swift; sourceTree = "<group>"; };
+		F45642A627AD3C37005A8999 /* OfertaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfertaTableViewCell.xib; sourceTree = "<group>"; };
 		F4E2DC28279A0EB100F57A1A /* HomeTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewHeader.xib; sourceTree = "<group>"; };
 		F4E2DC2A279A122500F57A1A /* HomeTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,8 +66,8 @@
 		F40669A127AA2182004A0340 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				F40669A227AA2200004A0340 /* ViagemTableViewCell.swift */,
-				F40669A327AA2200004A0340 /* ViagemTableViewCell.xib */,
+				F45642A327AD3BA7005A8999 /* Destaque */,
+				F45642A427AD3BD5005A8999 /* Oferta */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -114,6 +118,24 @@
 				F418ED70279820EB0025C7FC /* Info.plist */,
 			);
 			path = Viagens;
+			sourceTree = "<group>";
+		};
+		F45642A327AD3BA7005A8999 /* Destaque */ = {
+			isa = PBXGroup;
+			children = (
+				F40669A227AA2200004A0340 /* ViagemTableViewCell.swift */,
+				F40669A327AA2200004A0340 /* ViagemTableViewCell.xib */,
+			);
+			path = Destaque;
+			sourceTree = "<group>";
+		};
+		F45642A427AD3BD5005A8999 /* Oferta */ = {
+			isa = PBXGroup;
+			children = (
+				F45642A527AD3C37005A8999 /* OfertaTableViewCell.swift */,
+				F45642A627AD3C37005A8999 /* OfertaTableViewCell.xib */,
+			);
+			path = Oferta;
 			sourceTree = "<group>";
 		};
 		F4E2DC2C279B939900F57A1A /* AppDelegate */ = {
@@ -228,6 +250,7 @@
 				F418ED6C279820EB0025C7FC /* Assets.xcassets in Resources */,
 				F418ED6A279820DA0025C7FC /* Main.storyboard in Resources */,
 				F40669A527AA2200004A0340 /* ViagemTableViewCell.xib in Resources */,
+				F45642A827AD3C37005A8999 /* OfertaTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +265,7 @@
 				F418ED67279820DA0025C7FC /* ViewController.swift in Sources */,
 				F40669A427AA2200004A0340 /* ViagemTableViewCell.swift in Sources */,
 				F40669B127AA9232004A0340 /* UIView+Extension.swift in Sources */,
+				F45642A727AD3C37005A8999 /* OfertaTableViewCell.swift in Sources */,
 				F40669AC27AA91E0004A0340 /* TiposDeViagens.swift in Sources */,
 				F4E2DC2B279A122600F57A1A /* HomeTableViewHeader.swift in Sources */,
 				F40669AA27AA91C4004A0340 /* DecodableData.swift in Sources */,
