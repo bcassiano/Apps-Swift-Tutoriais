@@ -166,7 +166,9 @@
                 <outletCollection property="precoLabels" destination="50B-di-NMG" collectionClass="NSMutableArray" id="ZSC-ho-TYP"/>
                 <outletCollection property="precoLabels" destination="3vi-Sa-qzT" collectionClass="NSMutableArray" id="6hz-SA-dpd"/>
                 <outletCollection property="precoSemDescontoLabels" destination="YrS-BG-6uA" collectionClass="NSMutableArray" id="Ouj-M4-0k1"/>
-                <outletCollection property="precoSemDescontoLabels" destination="cd5-qr-qBg" collectionClass="NSMutableArray" id="xlz-9s-u3f"/>
+                <outletCollection property="fundoViews" destination="4ED-ea-eGC" collectionClass="NSMutableArray" id="fYz-Ln-4U9"/>
+                <outletCollection property="fundoViews" destination="P1d-7Z-7zu" collectionClass="NSMutableArray" id="2np-MZ-EPE"/>
+                <outletCollection property="precoSemDescontoLabels" destination="cd5-qr-qBg" collectionClass="NSMutableArray" id="lE4-Pi-ugA"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="109.48660714285714"/>
         </tableViewCell>
