@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetalheViewController" customModule="AluraViagens" customModuleProvider="target">
             <connections>
+                <outlet property="subtituloViagemLabel" destination="vpW-wp-G4X" id="JS4-JU-Dru"/>
+                <outlet property="tituloViagemLabel" destination="auA-3n-6mF" id="vCX-qF-zVj"/>
+                <outlet property="viagemImage" destination="gFY-FR-Dn5" id="rng-vM-9J4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,24 +21,68 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="8hc-e4-eu9">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="8hc-e4-eu9">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbc-vU-0vH" userLabel="Image Viagem View">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="235"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancun-internacional" translatesAutoresizingMaskIntoConstraints="NO" id="gFY-FR-Dn5">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="235"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8LI-M8-NVf">
+                                    <rect key="frame" x="18" y="35" width="45" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="81S-B6-evI"/>
+                                        <constraint firstAttribute="width" constant="45" id="T5O-XO-xtY"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.left.circle.fill" catalog="system" title="Voltar">
+                                        <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="botaoVoltar:" destination="-1" eventType="touchUpInside" id="xhb-Bb-FZW"/>
+                                    </connections>
+                                </button>
+                            </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="gFY-FR-Dn5" secondAttribute="trailing" id="6Xj-ll-GqD"/>
+                                <constraint firstItem="8LI-M8-NVf" firstAttribute="top" secondItem="qbc-vU-0vH" secondAttribute="top" constant="35" id="GKh-3H-IhV"/>
+                                <constraint firstItem="8LI-M8-NVf" firstAttribute="leading" secondItem="qbc-vU-0vH" secondAttribute="leading" constant="18" id="MER-AE-mAQ"/>
+                                <constraint firstItem="gFY-FR-Dn5" firstAttribute="top" secondItem="qbc-vU-0vH" secondAttribute="top" id="T4M-Fg-GUM"/>
+                                <constraint firstAttribute="bottom" secondItem="gFY-FR-Dn5" secondAttribute="bottom" id="VWq-S9-6g7"/>
+                                <constraint firstItem="gFY-FR-Dn5" firstAttribute="leading" secondItem="qbc-vU-0vH" secondAttribute="leading" id="tSl-IO-Cfm"/>
+                            </constraints>
                         </view>
-                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gvT-cL-zCX">
-                            <rect key="frame" x="8" y="253" width="398" height="200"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gvT-cL-zCX">
+                            <rect key="frame" x="16" y="235" width="382" height="79"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pacote de Viagem para Cancun All Inclusive" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auA-3n-6mF">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="59"/>
+                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="21"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aéreo + Hospedagem" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpW-wp-G4X">
+                                    <rect key="frame" x="0.0" y="59" width="382" height="20"/>
+                                    <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
                         </stackView>
                     </subviews>
                     <constraints>
                         <constraint firstItem="qbc-vU-0vH" firstAttribute="leading" secondItem="8hc-e4-eu9" secondAttribute="leading" id="2pa-z2-GDM"/>
                         <constraint firstItem="qbc-vU-0vH" firstAttribute="width" secondItem="8hc-e4-eu9" secondAttribute="width" id="A4Z-xQ-2cY"/>
                         <constraint firstItem="qbc-vU-0vH" firstAttribute="top" secondItem="8hc-e4-eu9" secondAttribute="top" id="jab-7j-h0W"/>
+                        <constraint firstAttribute="bottom" secondItem="gvT-cL-zCX" secondAttribute="bottom" id="jfs-Gi-Yi7"/>
+                        <constraint firstItem="gvT-cL-zCX" firstAttribute="top" secondItem="qbc-vU-0vH" secondAttribute="bottom" id="jma-wL-Wfr"/>
                         <constraint firstAttribute="trailing" secondItem="qbc-vU-0vH" secondAttribute="trailing" id="mIr-Xy-KmM"/>
+                        <constraint firstAttribute="trailing" secondItem="gvT-cL-zCX" secondAttribute="trailing" constant="16" id="nWC-4L-Rdc"/>
                         <constraint firstItem="qbc-vU-0vH" firstAttribute="height" secondItem="8hc-e4-eu9" secondAttribute="height" multiplier="0.262277" id="sEw-eO-GDD"/>
+                        <constraint firstItem="gvT-cL-zCX" firstAttribute="leading" secondItem="8hc-e4-eu9" secondAttribute="leading" constant="16" id="xKu-Px-PPv"/>
                     </constraints>
                 </scrollView>
             </subviews>
@@ -50,6 +97,8 @@
         </view>
     </objects>
     <resources>
+        <image name="arrowshape.turn.up.left.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="cancun-internacional" width="1280" height="778"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
