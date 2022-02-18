@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetalheViewController" customModule="AluraViagens" customModuleProvider="target">
             <connections>
+                <outlet property="diariaViagemLabel" destination="sEE-zZ-HbG" id="Qvh-89-8R5"/>
+                <outlet property="precoSemDescontoLabel" destination="PS8-re-meF" id="hfv-q2-yng"/>
+                <outlet property="precoViagemLabel" destination="JoD-YC-6P8" id="wQR-f9-xlb"/>
                 <outlet property="subtituloViagemLabel" destination="vpW-wp-G4X" id="JS4-JU-Dru"/>
                 <outlet property="tituloViagemLabel" destination="auA-3n-6mF" id="vCX-qF-zVj"/>
                 <outlet property="viagemImage" destination="gFY-FR-Dn5" id="rng-vM-9J4"/>
