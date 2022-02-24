@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol CameraDelegate: AnyObject {
-    func didFinishFoto(_ image: UIImage)
+    func didSelectFoto(_ image: UIImage)
 }
 
 class Camera: NSObject {
@@ -26,6 +26,14 @@ class Camera: NSObject {
         controller.present(imagePicker, animated: true, completion: nil)
     
     }
+    
+    func abrirBibliotecaFotos(_ controller: UIViewController, _ imagePicker: UIImagePickerController) {
+        imagePicker.delegate = self
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = .photoLibrary
+        
+        controller.present(imagePicker, animated: true, completion: nil)
+    }
 }
 
 extension Camera: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
@@ -35,6 +43,6 @@ extension Camera: UIImagePickerControllerDelegate & UINavigationControllerDelega
         picker.dismiss(animated: true)
         guard let foto = info[.editedImage] as? UIImage else { return }
         
-        print (foto)
+        delegate?.didSelectFoto(foto)
     }
 }
