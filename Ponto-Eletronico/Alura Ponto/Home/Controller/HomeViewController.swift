@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class HomeViewController: UIViewController {
 
@@ -20,6 +21,13 @@ class HomeViewController: UIViewController {
     private var timer: Timer?
     private lazy var camera = Camera()
     private lazy var controladorDeImagem = UIImagePickerController()
+    
+    var contexto: NSManagedObjectContext = {
+        let contexto = UIApplication.shared.delegate as! AppDelegate
+        
+        return contexto.persistentContainer.viewContext
+    }()
+    
     // MARK: - View life cycle
 
     override func viewDidLoad() {
@@ -82,5 +90,7 @@ extension HomeViewController: CameraDelegate {
     func didSelectFoto(_ image: UIImage) {
         let recibo = Recibo(status: false, data: Date(), foto: image)
         Secao.shared.addRecibos(recibo)
+        
+        recibo.save(contexto)
     }
 }
