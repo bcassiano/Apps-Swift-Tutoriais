@@ -140,7 +140,7 @@ extension ReciboViewController: NSFetchedResultsControllerDelegate {
         switch type {
         case .delete:
             if let indexPath = indexPath {
-                reciboTableView.deleteRows(at: [indexPath], with: .fade)
+                reciboTableView.deleteRows(at: [indexPath], with: .fade)    
             }
             break
         default:
