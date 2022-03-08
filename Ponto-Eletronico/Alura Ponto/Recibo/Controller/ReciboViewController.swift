@@ -46,6 +46,8 @@ class ReciboViewController: UIViewController {
         configuraTableView()
         configuraViewFoto()
         buscador.delegate = self
+        
+        Perfil().carregarImagem()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -128,6 +130,7 @@ extension ReciboViewController: ReciboTableViewCellDelegate {
 
 extension ReciboViewController: CameraDelegate {
     func didSelectFoto(_ image: UIImage) {
+        Perfil().salvarImagem(image)
         escolhaFotoButton.isHidden = true
         fotoPerfilImageView.image = image
         
