@@ -10,10 +10,12 @@ import UIKit
 
 class Perfil {
     
+   private let nomeDaFoto = "perfil.png"
+
+    
     func salvarImagem(_ imagem: UIImage) {
         
         guard let diretorio = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
-        let nomeDaFoto = "perfil.png"
         let urlDoArquivo = diretorio.appendingPathComponent(nomeDaFoto)
         
         if FileManager.default.fileExists(atPath: urlDoArquivo.path) {
@@ -48,7 +50,11 @@ class Perfil {
         
         let urlDoArquivo = NSSearchPathForDirectoriesInDomains(diretorio, userDomainMask, true)
         
-        print(urlDoArquivo)
+        if let caminho = urlDoArquivo.first {
+            let urlDaImagem = URL(fileURLWithPath: caminho).appendingPathComponent(nomeDaFoto)
+            let imagem = UIImage(contentsOfFile: urlDaImagem.path)
+            return imagem
+        }
         
         return nil
     }

@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import LocalAuthentication
 
 class ReciboViewController: UIViewController {
     
@@ -47,11 +48,11 @@ class ReciboViewController: UIViewController {
         configuraViewFoto()
         buscador.delegate = self
         
-        Perfil().carregarImagem()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         getRecibos()
+        getFotoDePerfil()
         reciboTableView.reloadData()
     }
     
@@ -59,6 +60,12 @@ class ReciboViewController: UIViewController {
     
     func getRecibos() {
         Recibo.carregar(buscador)
+    }
+    
+    func getFotoDePerfil() {
+        if let imagemDePerfil = Perfil().carregarImagem() {
+            fotoPerfilImageView.image = imagemDePerfil
+        }
     }
     
     func configuraViewFoto() {
@@ -123,8 +130,26 @@ extension ReciboViewController: UITableViewDelegate {
 
 extension ReciboViewController: ReciboTableViewCellDelegate {
     func deletarRecibo(_ index: Int) {
-        guard let recibo = buscador.fetchedObjects?[index] else { return }
-        recibo.deletat(contexto)
+        
+        let authenticatorContext = LAContext()
+        var error: NSError?
+        
+        if authenticatorContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            
+            authenticatorContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "É necessário autenticação para apagar um recibo") { [weak self] sucesso, error in
+                
+                DispatchQueue.main.async {
+                    if sucesso {
+                        guard let recibo = self?.buscador.fetchedObjects?[index] else { return }
+                        
+                        if let contexto = self?.contexto{
+                            recibo.deletat(contexto)
+
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
