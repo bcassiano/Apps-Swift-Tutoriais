@@ -7,7 +7,6 @@
 
 import UIKit
 import CoreData
-import LocalAuthentication
 
 class ReciboViewController: UIViewController {
     
@@ -131,23 +130,10 @@ extension ReciboViewController: UITableViewDelegate {
 extension ReciboViewController: ReciboTableViewCellDelegate {
     func deletarRecibo(_ index: Int) {
         
-        let authenticatorContext = LAContext()
-        var error: NSError?
-        
-        if authenticatorContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            
-            authenticatorContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "É necessário autenticação para apagar um recibo") { [weak self] sucesso, error in
-                
-                DispatchQueue.main.async {
-                    if sucesso {
-                        guard let recibo = self?.buscador.fetchedObjects?[index] else { return }
-                        
-                        if let contexto = self?.contexto{
-                            recibo.deletat(contexto)
-
-                        }
-                    }
-                }
+        AutenticacaoLocal().autorizaUsuario { autenticado in
+            if autenticado {
+                guard let recibo = self.buscador.fetchedObjects?[index] else { return }
+                recibo.deletar(self.contexto)
             }
         }
     }

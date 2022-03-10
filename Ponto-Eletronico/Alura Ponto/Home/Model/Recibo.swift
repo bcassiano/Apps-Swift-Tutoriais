@@ -53,7 +53,7 @@ extension Recibo {
         }
     }
     
-    func deletat(_ contexto: NSManagedObjectContext) {
+    func deletar(_ contexto: NSManagedObjectContext) {
         contexto.delete(self)
         
         do {
