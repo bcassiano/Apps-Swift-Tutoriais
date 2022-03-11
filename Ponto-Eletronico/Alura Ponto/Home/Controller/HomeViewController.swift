@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import CoreLocation
 
 class HomeViewController: UIViewController {
 
@@ -28,12 +29,14 @@ class HomeViewController: UIViewController {
         return contexto.persistentContainer.viewContext
     }()
     
+    lazy var gerenciadorDeLocalizacao = CLLocationManager()
     // MARK: - View life cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configuraView()
         atualizaHorario()
+        requisicaoDaLocalizacaoDoUsuario()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -78,6 +81,25 @@ class HomeViewController: UIViewController {
             camera.abrirCamera(self, controladorDeImagem)
         }
     }
+    
+    func requisicaoDaLocalizacaoDoUsuario() {
+        gerenciadorDeLocalizacao.delegate = self
+        
+        if CLLocationManager.locationServicesEnabled() {
+            switch gerenciadorDeLocalizacao.authorizationStatus {
+            case .authorizedAlways, .authorizedWhenInUse:
+                break
+            case .denied:
+                //Mostrar um alert explicando o pedido novamente a autorizacao
+                break
+            case .notDetermined: gerenciadorDeLocalizacao.requestWhenInUseAuthorization()
+            default:
+                break
+                
+                
+            }
+        }
+    }
     // MARK: - IBActions
     
     @IBAction func registrarButton(_ sender: UIButton) {
@@ -93,3 +115,25 @@ extension HomeViewController: CameraDelegate {
         recibo.salvar(contexto)
     }
 }
+
+extension HomeViewController: CLLocationManagerDelegate {
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        switch manager.authorizationStatus {
+        case .authorizedAlways, .authorizedWhenInUse: gerenciadorDeLocalizacao.startUpdatingLocation()
+        default:
+            break
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        if let localizacao = locations.first {
+            print(localizacao.coordinate.latitude)
+            print(localizacao.coordinate.longitude)
+        }
+    }
+
+}
+
+
