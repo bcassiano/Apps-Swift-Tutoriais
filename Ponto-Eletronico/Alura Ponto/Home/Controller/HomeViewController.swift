@@ -23,6 +23,9 @@ class HomeViewController: UIViewController {
     private lazy var camera = Camera()
     private lazy var controladorDeImagem = UIImagePickerController()
     
+    private var latitude: CLLocationDegrees?
+    private var longitude: CLLocationDegrees?
+    
     var contexto: NSManagedObjectContext = {
         let contexto = UIApplication.shared.delegate as! AppDelegate
         
@@ -110,8 +113,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: CameraDelegate {
     func didSelectFoto(_ image: UIImage) {
-        let recibo = Recibo(status: false, data: Date(), foto: image)
-        
+        let recibo = Recibo(status: false, data: Date(), foto: image, latitude: latitude ?? 0.0, longitude: longitude ?? 0.0)
         recibo.salvar(contexto)
     }
 }
@@ -129,11 +131,11 @@ extension HomeViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         if let localizacao = locations.first {
-            print(localizacao.coordinate.latitude)
-            print(localizacao.coordinate.longitude)
+            latitude = localizacao.coordinate.latitude
+            longitude = localizacao.coordinate.longitude
+            
         }
     }
-
 }
 
 

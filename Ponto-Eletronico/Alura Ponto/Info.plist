@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Precisamos de sua localização para registrar o ponto eletrônico</string>
 	<key>NSFaceIDUsageDescription</key>
 	<string>É necessário autenticar para ter acesso as configurações</string>
 	<key>CFBundleDevelopmentRegion</key>
