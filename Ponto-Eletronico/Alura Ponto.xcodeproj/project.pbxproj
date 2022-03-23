@@ -23,6 +23,7 @@
 		F41A3FA127C7254600562DDE /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41A3FA027C7254600562DDE /* Camera.swift */; };
 		F4C811B427D7653B00B77C22 /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C811B327D7653B00B77C22 /* Perfil.swift */; };
 		F4C811B627D8BE5200B77C22 /* AutenticacaoLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C811B527D8BE5200B77C22 /* AutenticacaoLocal.swift */; };
+		F4C811B827EB307100B77C22 /* Localizacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C811B727EB307100B77C22 /* Localizacao.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		F41A3FA027C7254600562DDE /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		F4C811B327D7653B00B77C22 /* Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
 		F4C811B527D8BE5200B77C22 /* AutenticacaoLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutenticacaoLocal.swift; sourceTree = "<group>"; };
+		F4C811B727EB307100B77C22 /* Localizacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizacao.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				03431DCB270290D200EB8D91 /* FormatadorDeData.swift */,
 				F4C811B327D7653B00B77C22 /* Perfil.swift */,
 				F4C811B527D8BE5200B77C22 /* AutenticacaoLocal.swift */,
+				F4C811B727EB307100B77C22 /* Localizacao.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			files = (
 				030EF1D926FD2A13000D3E42 /* ReciboTableViewCell.swift in Sources */,
 				F4C811B627D8BE5200B77C22 /* AutenticacaoLocal.swift in Sources */,
+				F4C811B827EB307100B77C22 /* Localizacao.swift in Sources */,
 				030EF1CB26FBE62E000D3E42 /* ReciboViewController.swift in Sources */,
 				03431DD32703BD2B00EB8D91 /* Alura_Ponto.xcdatamodeld in Sources */,
 				030EF1A626FBD61C000D3E42 /* AppDelegate.swift in Sources */,

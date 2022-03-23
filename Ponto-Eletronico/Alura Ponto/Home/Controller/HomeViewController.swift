@@ -33,6 +33,7 @@ class HomeViewController: UIViewController {
     }()
     
     lazy var gerenciadorDeLocalizacao = CLLocationManager()
+    private lazy var localizacao = Localizacao()
     // MARK: - View life cycle
 
     override func viewDidLoad() {
@@ -86,22 +87,8 @@ class HomeViewController: UIViewController {
     }
     
     func requisicaoDaLocalizacaoDoUsuario() {
-        gerenciadorDeLocalizacao.delegate = self
-        
-        if CLLocationManager.locationServicesEnabled() {
-            switch gerenciadorDeLocalizacao.authorizationStatus {
-            case .authorizedAlways, .authorizedWhenInUse:
-                break
-            case .denied:
-                //Mostrar um alert explicando o pedido novamente a autorizacao
-                break
-            case .notDetermined: gerenciadorDeLocalizacao.requestWhenInUseAuthorization()
-            default:
-                break
-                
-                
-            }
-        }
+        localizacao.delegate = self
+        localizacao.permissao(gerenciadorDeLocalizacao)
     }
     // MARK: - IBActions
     
@@ -118,24 +105,9 @@ extension HomeViewController: CameraDelegate {
     }
 }
 
-extension HomeViewController: CLLocationManagerDelegate {
-    
-    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        switch manager.authorizationStatus {
-        case .authorizedAlways, .authorizedWhenInUse: gerenciadorDeLocalizacao.startUpdatingLocation()
-        default:
-            break
-        }
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
-        if let localizacao = locations.first {
-            latitude = localizacao.coordinate.latitude
-            longitude = localizacao.coordinate.longitude
-            
-        }
+extension HomeViewController: LocalizacaoDelegate {
+    func atualizaLocalizacaoDoUsuario(latitude: Double?, longitude: Double?) {
+        self.latitude = latitude ?? 0.0
+        self.longitude = longitude ?? 0.0
     }
 }
-
-
