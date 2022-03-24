@@ -27,6 +27,7 @@ class Localizacao: NSObject {
         if CLLocationManager.locationServicesEnabled() {
             switch gerenciadorDeLocalizacao.authorizationStatus {
             case .authorizedAlways, .authorizedWhenInUse:
+                gerenciadorDeLocalizacao.startUpdatingLocation()
                 break
             case .denied:
                 //Mostrar um alert explicando o pedido novamente a autorizacao

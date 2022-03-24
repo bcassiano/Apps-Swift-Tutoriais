@@ -21,6 +21,8 @@
 		03431DD32703BD2B00EB8D91 /* Alura_Ponto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03431DD12703BD2B00EB8D91 /* Alura_Ponto.xcdatamodeld */; };
 		03E880B22704FC4400033A34 /* Recibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E880B12704FC4400033A34 /* Recibo.swift */; };
 		F41A3FA127C7254600562DDE /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41A3FA027C7254600562DDE /* Camera.swift */; };
+		F42747E227EC7F8F00C2F2CD /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42747E027EC7F8F00C2F2CD /* MapaViewController.swift */; };
+		F42747E327EC7F8F00C2F2CD /* MapaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42747E127EC7F8F00C2F2CD /* MapaViewController.xib */; };
 		F4C811B427D7653B00B77C22 /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C811B327D7653B00B77C22 /* Perfil.swift */; };
 		F4C811B627D8BE5200B77C22 /* AutenticacaoLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C811B527D8BE5200B77C22 /* AutenticacaoLocal.swift */; };
 		F4C811B827EB307100B77C22 /* Localizacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C811B727EB307100B77C22 /* Localizacao.swift */; };
@@ -43,6 +45,8 @@
 		03431DD22703BD2B00EB8D91 /* Alura_Ponto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Alura_Ponto.xcdatamodel; sourceTree = "<group>"; };
 		03E880B12704FC4400033A34 /* Recibo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recibo.swift; sourceTree = "<group>"; };
 		F41A3FA027C7254600562DDE /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		F42747E027EC7F8F00C2F2CD /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
+		F42747E127EC7F8F00C2F2CD /* MapaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapaViewController.xib; sourceTree = "<group>"; };
 		F4C811B327D7653B00B77C22 /* Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
 		F4C811B527D8BE5200B77C22 /* AutenticacaoLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutenticacaoLocal.swift; sourceTree = "<group>"; };
 		F4C811B727EB307100B77C22 /* Localizacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizacao.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 				030EF1B926FBD69B000D3E42 /* AppDelegate */,
 				030EF1BC26FBD6B8000D3E42 /* Home */,
 				030EF1CF26FBE686000D3E42 /* Recibo */,
+				F42747DD27EC7EE200C2F2CD /* Mapa */,
 				03431DD02703BD0A00EB8D91 /* CoreData */,
 				030EF1AE26FBD61E000D3E42 /* Assets.xcassets */,
 				030EF1B026FBD61E000D3E42 /* LaunchScreen.storyboard */,
@@ -180,6 +185,31 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		F42747DD27EC7EE200C2F2CD /* Mapa */ = {
+			isa = PBXGroup;
+			children = (
+				F42747DE27EC7F0E00C2F2CD /* View */,
+				F42747DF27EC7F2D00C2F2CD /* Controller */,
+			);
+			path = Mapa;
+			sourceTree = "<group>";
+		};
+		F42747DE27EC7F0E00C2F2CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F42747E127EC7F8F00C2F2CD /* MapaViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F42747DF27EC7F2D00C2F2CD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F42747E027EC7F8F00C2F2CD /* MapaViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,6 +272,7 @@
 				030EF1B226FBD61E000D3E42 /* LaunchScreen.storyboard in Resources */,
 				030EF1AF26FBD61E000D3E42 /* Assets.xcassets in Resources */,
 				030EF1C826FBE529000D3E42 /* HomeViewController.xib in Resources */,
+				F42747E327EC7F8F00C2F2CD /* MapaViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +285,7 @@
 			files = (
 				030EF1D926FD2A13000D3E42 /* ReciboTableViewCell.swift in Sources */,
 				F4C811B627D8BE5200B77C22 /* AutenticacaoLocal.swift in Sources */,
+				F42747E227EC7F8F00C2F2CD /* MapaViewController.swift in Sources */,
 				F4C811B827EB307100B77C22 /* Localizacao.swift in Sources */,
 				030EF1CB26FBE62E000D3E42 /* ReciboViewController.swift in Sources */,
 				03431DD32703BD2B00EB8D91 /* Alura_Ponto.xcdatamodeld in Sources */,
