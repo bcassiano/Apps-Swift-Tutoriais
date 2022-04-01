@@ -6,8 +6,15 @@
 //
 
 import UIKit
+import MapKit
 
 class MapaViewController: UIViewController {
+    
+    // MARK: - IBOutlet
+    
+    @IBOutlet weak var mapa: MKMapView!
+    
+    
 
     // MARK: - Atributos
     
@@ -30,6 +37,16 @@ class MapaViewController: UIViewController {
     
     // MARK: - Métodos
     
-    
+    func setRegiao() {
+        
+        guard let latitude = recibo?.latitude, let longitude = recibo?.longitude else {
+            return
+        }
+        
+        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+        
+        let regiao = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: latitude, longitude: longitude), span: span)
+        mapa.setRegion(regiao, animated: true)
+    }
 
 }
