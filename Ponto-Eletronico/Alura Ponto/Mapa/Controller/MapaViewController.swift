@@ -46,7 +46,7 @@ class MapaViewController: UIViewController {
         let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
         
         let regiao = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: latitude, longitude: longitude), span: span)
-        mapa.setRegion(regiao, animated: true)
+        mapa.setRegion(regiao, animated: true )
     }
 
 }
