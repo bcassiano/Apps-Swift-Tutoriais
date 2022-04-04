@@ -33,6 +33,8 @@ class MapaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setRegiao()
+        adicionarPino()
     }
     
     // MARK: - Métodos
@@ -49,4 +51,26 @@ class MapaViewController: UIViewController {
         mapa.setRegion(regiao, animated: true )
     }
 
+    func adicionarPino() {
+        
+        let annotation = MKPointAnnotation()
+        annotation.title = "Registro de Ponto"
+        
+        annotation.coordinate.latitude = recibo?.latitude ?? 0.0
+        annotation.coordinate.longitude = recibo?.longitude ?? 0.0
+        
+        mapa.addAnnotation(annotation)
+        
+        // Teste - Caso necessite pesquisar a localização, colocando um campo Serch
+//        let geoCoder = CLGeocoder()
+//
+//        geoCoder.geocodeAddressString("Avenida Paulista") { locaisEncontrados, error in
+//
+//            let localizacao = locaisEncontrados?.first
+//
+//            let latitude = localizacao?.location?.coordinate.latitude
+//            let longitude = localizacao?.location?.coordinate.longitude
+//
+//        }
+    }
 }
