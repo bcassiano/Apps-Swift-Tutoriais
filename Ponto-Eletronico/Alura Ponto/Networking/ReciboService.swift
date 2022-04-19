@@ -23,8 +23,29 @@ class ReciboService {
             ]
         ]
         
-        guard let body = try? JSONSerialization.data(withJSONObject: parametros, options: []) else { return}
+        guard let body = try? JSONSerialization.data(withJSONObject: parametros, options: []) else { return }
         
+        guard let url = URL(string: baseURL + path) else { return }
+            
+        var requisicao = URLRequest(url: url)
+            requisicao.httpMethod = "POST"
+            requisicao.setValue("application/json ", forHTTPHeaderField: "Content-Type")
+            requisicao.httpBody = body
         
+        URLSession.shared.dataTask(with: requisicao) { data, resposta, error in
+           
+            if let resposta = resposta {
+                print(resposta)
+            }
+            
+            if let data = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    print(json)
+                } catch {
+                    print(error)
+                }
+            }
+        }.resume()
     }
 }
