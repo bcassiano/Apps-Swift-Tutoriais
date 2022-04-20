@@ -9,7 +9,7 @@ import Foundation
 
 class ReciboService {
     
-    func post(_ recibo: Recibo) {
+    func post(_ recibo: Recibo, completion: @escaping(_ salvo: Bool) -> Void) {
         
         let baseURL = "http://localhost:8080/"
         let path = "recibos"
@@ -34,18 +34,14 @@ class ReciboService {
         
         URLSession.shared.dataTask(with: requisicao) { data, resposta, error in
            
-            if let resposta = resposta {
-                print(resposta)
+            if error == nil {
+                completion(true)
+                
+                return
             }
             
-            if let data = data {
-                do {
-                    let json = try JSONSerialization.jsonObject(with: data, options: [])
-                    print(json)
-                } catch {
-                    print(error)
-                }
-            }
+            completion(false)
+            
         }.resume()
     }
 }

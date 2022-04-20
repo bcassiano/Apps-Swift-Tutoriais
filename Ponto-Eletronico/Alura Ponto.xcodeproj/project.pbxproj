@@ -84,12 +84,12 @@
 		030EF1A426FBD61C000D3E42 /* Alura Ponto */ = {
 			isa = PBXGroup;
 			children = (
-				F47EDA06280D795C00675CA3 /* Networking */,
 				030EF1B926FBD69B000D3E42 /* AppDelegate */,
 				030EF1BC26FBD6B8000D3E42 /* Home */,
 				030EF1CF26FBE686000D3E42 /* Recibo */,
 				F42747DD27EC7EE200C2F2CD /* Mapa */,
 				03431DD02703BD0A00EB8D91 /* CoreData */,
+				F47EDA06280D795C00675CA3 /* Networking */,
 				030EF1AE26FBD61E000D3E42 /* Assets.xcassets */,
 				030EF1B026FBD61E000D3E42 /* LaunchScreen.storyboard */,
 				030EF1B326FBD61E000D3E42 /* Info.plist */,
