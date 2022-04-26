@@ -6,8 +6,25 @@
 //
 
 import Foundation
+import Alamofire
 
 class ReciboService {
+    
+    func get() {
+        AF.request("http://localhost:8080/recibos", method:  .get, headers: ["Accept":"application/json"]).responseJSON { resposta in
+            switch resposta.result {
+            case .success(let json):
+                
+                if let listaDeRecibos = json as? [[String]] {
+                    print (listaDeRecibos)
+                }
+                break
+            case .failure(let error):
+                print(error.localizedDescription)
+                break
+            }
+        }
+    }
     
     func post(_ recibo: Recibo, completion: @escaping(_ salvo: Bool) -> Void) {
         
