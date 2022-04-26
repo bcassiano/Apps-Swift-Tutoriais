@@ -142,7 +142,7 @@ extension ReciboViewController: ReciboTableViewCellDelegate {
         
         AutenticacaoLocal().autorizaUsuario { autenticado in
             if autenticado {
-                guard let recibo = self.buscador.fetchedObjects?[index] else { return }
+                guard let recibo = self.buscador.fetchedObjects?[index] else { return} 
                 recibo.deletar(self.contexto)
             }
         }
