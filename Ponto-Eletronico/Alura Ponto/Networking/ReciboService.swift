@@ -14,9 +14,12 @@ class ReciboService {
         AF.request("http://localhost:8080/recibos", method:  .get, headers: ["Accept":"application/json"]).responseJSON { resposta in
             switch resposta.result {
             case .success(let json):
-                
-                if let listaDeRecibos = json as? [[String]] {
-                    print (listaDeRecibos)
+                var recibos: [Recibo] = [ ]
+                if let listaDeRecibos = json as? [[String: Any]] {
+                    for reciboDict in listaDeRecibos {
+                        if let novoRecibo = Recibo.serializa(reciboDict)
+                        recibos.append(novoRecibo)
+                    }
                 }
                 break
             case .failure(let error):

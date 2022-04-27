@@ -21,6 +21,8 @@ class ReciboViewController: UIViewController {
     
     private lazy var camera = Camera()
     private lazy var controladorDeImagem = UIImagePickerController()
+    private lazy var reciboService = ReciboService()
+
     
     var contexto: NSManagedObjectContext = {
         let contexto = UIApplication.shared.delegate as! AppDelegate
@@ -59,6 +61,9 @@ class ReciboViewController: UIViewController {
     
     func getRecibos() {
         Recibo.carregar(buscador)
+        
+        reciboService.get()
+        
     }
     
     func getFotoDePerfil() {
