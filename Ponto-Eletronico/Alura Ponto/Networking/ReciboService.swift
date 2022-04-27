@@ -10,20 +10,24 @@ import Alamofire
 
 class ReciboService {
     
-    func get() {
+    func get(completion: @escaping(_ recibos: [Recibo]?, _ error: Error?) -> Void) {
         AF.request("http://localhost:8080/recibos", method:  .get, headers: ["Accept":"application/json"]).responseJSON { resposta in
             switch resposta.result {
             case .success(let json):
                 var recibos: [Recibo] = [ ]
                 if let listaDeRecibos = json as? [[String: Any]] {
                     for reciboDict in listaDeRecibos {
-                        if let novoRecibo = Recibo.serializa(reciboDict)
-                        recibos.append(novoRecibo)
+                        if let novoRecibo = Recibo.serializa(reciboDict) {
+                            recibos.append(novoRecibo)
+
+                        }
                     }
+                    
+                    completion(recibos, nil)
                 }
                 break
             case .failure(let error):
-                print(error.localizedDescription)
+                completion(nil, error)
                 break
             }
         }
