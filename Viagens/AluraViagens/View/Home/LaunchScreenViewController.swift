@@ -36,7 +36,7 @@ class LaunchScreenViewController: UIViewController {
     }
 
     func irParaHome() {
-        let tabBar = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tab-bar")
+        let tabBar = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tab-bar" )
         
         present(tabBar,animated: true, completion: nil)
     }
