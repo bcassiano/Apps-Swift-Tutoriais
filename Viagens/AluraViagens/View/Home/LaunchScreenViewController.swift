@@ -38,7 +38,7 @@ class LaunchScreenViewController: UIViewController {
     func irParaHome() {
         let tabBar = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tab-bar" )
         let navigation = UINavigationController(rootViewController: tabBar)
-        navigation.setToolbarHidden(true, animated: false)
+        navigation.setToolbarHidden(true, animated: false) 
         present(navigation,animated: true, completion: nil)
     }
     
