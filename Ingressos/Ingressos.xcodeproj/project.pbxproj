@@ -7,29 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F4716CAF283415FE00988B45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4716CAE283415FE00988B45 /* AppDelegate.swift */; };
-		F4716CB1283415FE00988B45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4716CB0283415FE00988B45 /* SceneDelegate.swift */; };
-		F4716CB3283415FE00988B45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4716CB2283415FE00988B45 /* ViewController.swift */; };
-		F4716CB6283415FE00988B45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4716CB4283415FE00988B45 /* Main.storyboard */; };
-		F4716CB82834160300988B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4716CB72834160300988B45 /* Assets.xcassets */; };
-		F4716CBB2834160300988B45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4716CB92834160300988B45 /* LaunchScreen.storyboard */; };
-		F4716CC328345AC600988B45 /* HomeTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4716CC228345AC500988B45 /* HomeTableViewHeader.xib */; };
+		F4F2A0E72837A79100AA578B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2A0E62837A79100AA578B /* AppDelegate.swift */; };
+		F4F2A0E92837A79100AA578B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2A0E82837A79100AA578B /* SceneDelegate.swift */; };
+		F4F2A0EB2837A79100AA578B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2A0EA2837A79100AA578B /* ViewController.swift */; };
+		F4F2A0EE2837A79100AA578B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F2A0EC2837A79100AA578B /* Main.storyboard */; };
+		F4F2A0F02837A7A400AA578B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4F2A0EF2837A7A400AA578B /* Assets.xcassets */; };
+		F4F2A0F32837A7A400AA578B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F2A0F12837A7A400AA578B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F4716CAB283415FE00988B45 /* Gym-BSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym-BSC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4716CAE283415FE00988B45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4716CB0283415FE00988B45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4716CB2283415FE00988B45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F4716CB5283415FE00988B45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F4716CB72834160300988B45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F4716CBA2834160300988B45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F4716CBC2834160300988B45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4716CC228345AC500988B45 /* HomeTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewHeader.xib; sourceTree = "<group>"; };
+		F4F2A0E32837A79100AA578B /* Ingressos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ingressos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4F2A0E62837A79100AA578B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4F2A0E82837A79100AA578B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F4F2A0EA2837A79100AA578B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4F2A0ED2837A79100AA578B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4F2A0EF2837A7A400AA578B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4F2A0F22837A7A400AA578B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4F2A0F42837A7A400AA578B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F4716CA8283415FE00988B45 /* Frameworks */ = {
+		F4F2A0E02837A79100AA578B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F4716CA2283415FE00988B45 = {
+		F4F2A0DA2837A79100AA578B = {
 			isa = PBXGroup;
 			children = (
-				F4716CAD283415FE00988B45 /* Gym-BSC */,
-				F4716CAC283415FE00988B45 /* Products */,
+				F4F2A0E52837A79100AA578B /* Ingressos */,
+				F4F2A0E42837A79100AA578B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F4716CAC283415FE00988B45 /* Products */ = {
+		F4F2A0E42837A79100AA578B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F4716CAB283415FE00988B45 /* Gym-BSC.app */,
+				F4F2A0E32837A79100AA578B /* Ingressos.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F4716CAD283415FE00988B45 /* Gym-BSC */ = {
+		F4F2A0E52837A79100AA578B /* Ingressos */ = {
 			isa = PBXGroup;
 			children = (
-				F4716CAE283415FE00988B45 /* AppDelegate.swift */,
-				F4716CB0283415FE00988B45 /* SceneDelegate.swift */,
-				F4716CB2283415FE00988B45 /* ViewController.swift */,
-				F4716CB4283415FE00988B45 /* Main.storyboard */,
-				F4716CB72834160300988B45 /* Assets.xcassets */,
-				F4716CB92834160300988B45 /* LaunchScreen.storyboard */,
-				F4716CBC2834160300988B45 /* Info.plist */,
-				F4716CC228345AC500988B45 /* HomeTableViewHeader.xib */,
+				F4F2A0E62837A79100AA578B /* AppDelegate.swift */,
+				F4F2A0E82837A79100AA578B /* SceneDelegate.swift */,
+				F4F2A0EA2837A79100AA578B /* ViewController.swift */,
+				F4F2A0EC2837A79100AA578B /* Main.storyboard */,
+				F4F2A0EF2837A7A400AA578B /* Assets.xcassets */,
+				F4F2A0F12837A7A400AA578B /* LaunchScreen.storyboard */,
+				F4F2A0F42837A7A400AA578B /* Info.plist */,
 			);
-			path = "Gym-BSC";
+			path = Ingressos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F4716CAA283415FE00988B45 /* Gym-BSC */ = {
+		F4F2A0E22837A79100AA578B /* Ingressos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F4716CBF2834160300988B45 /* Build configuration list for PBXNativeTarget "Gym-BSC" */;
+			buildConfigurationList = F4F2A0F72837A7A400AA578B /* Build configuration list for PBXNativeTarget "Ingressos" */;
 			buildPhases = (
-				F4716CA7283415FE00988B45 /* Sources */,
-				F4716CA8283415FE00988B45 /* Frameworks */,
-				F4716CA9283415FE00988B45 /* Resources */,
+				F4F2A0DF2837A79100AA578B /* Sources */,
+				F4F2A0E02837A79100AA578B /* Frameworks */,
+				F4F2A0E12837A79100AA578B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Gym-BSC";
-			productName = "Gym-BSC";
-			productReference = F4716CAB283415FE00988B45 /* Gym-BSC.app */;
+			name = Ingressos;
+			productName = Ingressos;
+			productReference = F4F2A0E32837A79100AA578B /* Ingressos.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F4716CA3283415FE00988B45 /* Project object */ = {
+		F4F2A0DB2837A79100AA578B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					F4716CAA283415FE00988B45 = {
+					F4F2A0E22837A79100AA578B = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
 			};
-			buildConfigurationList = F4716CA6283415FE00988B45 /* Build configuration list for PBXProject "Gym-BSC" */;
+			buildConfigurationList = F4F2A0DE2837A79100AA578B /* Build configuration list for PBXProject "Ingressos" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = F4716CA2283415FE00988B45;
-			productRefGroup = F4716CAC283415FE00988B45 /* Products */;
+			mainGroup = F4F2A0DA2837A79100AA578B;
+			productRefGroup = F4F2A0E42837A79100AA578B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F4716CAA283415FE00988B45 /* Gym-BSC */,
+				F4F2A0E22837A79100AA578B /* Ingressos */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F4716CA9283415FE00988B45 /* Resources */ = {
+		F4F2A0E12837A79100AA578B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4716CBB2834160300988B45 /* LaunchScreen.storyboard in Resources */,
-				F4716CC328345AC600988B45 /* HomeTableViewHeader.xib in Resources */,
-				F4716CB82834160300988B45 /* Assets.xcassets in Resources */,
-				F4716CB6283415FE00988B45 /* Main.storyboard in Resources */,
+				F4F2A0F32837A7A400AA578B /* LaunchScreen.storyboard in Resources */,
+				F4F2A0F02837A7A400AA578B /* Assets.xcassets in Resources */,
+				F4F2A0EE2837A79100AA578B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F4716CA7283415FE00988B45 /* Sources */ = {
+		F4F2A0DF2837A79100AA578B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4716CB3283415FE00988B45 /* ViewController.swift in Sources */,
-				F4716CAF283415FE00988B45 /* AppDelegate.swift in Sources */,
-				F4716CB1283415FE00988B45 /* SceneDelegate.swift in Sources */,
+				F4F2A0EB2837A79100AA578B /* ViewController.swift in Sources */,
+				F4F2A0E72837A79100AA578B /* AppDelegate.swift in Sources */,
+				F4F2A0E92837A79100AA578B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F4716CB4283415FE00988B45 /* Main.storyboard */ = {
+		F4F2A0EC2837A79100AA578B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F4716CB5283415FE00988B45 /* Base */,
+				F4F2A0ED2837A79100AA578B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F4716CB92834160300988B45 /* LaunchScreen.storyboard */ = {
+		F4F2A0F12837A7A400AA578B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F4716CBA2834160300988B45 /* Base */,
+				F4F2A0F22837A7A400AA578B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F4716CBD2834160300988B45 /* Debug */ = {
+		F4F2A0F52837A7A400AA578B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		F4716CBE2834160300988B45 /* Release */ = {
+		F4F2A0F62837A7A400AA578B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,7 +280,7 @@
 			};
 			name = Release;
 		};
-		F4716CC02834160300988B45 /* Debug */ = {
+		F4F2A0F82837A7A400AA578B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -293,11 +289,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PLV5U7588B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Gym-BSC/Info.plist";
+				INFOPLIST_FILE = Ingressos/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,7 +300,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brunocassiano.Gym-BSC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brunocassiano.Ingressos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -313,7 +308,7 @@
 			};
 			name = Debug;
 		};
-		F4716CC12834160300988B45 /* Release */ = {
+		F4F2A0F92837A7A400AA578B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -322,11 +317,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PLV5U7588B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Gym-BSC/Info.plist";
+				INFOPLIST_FILE = Ingressos/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +328,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brunocassiano.Gym-BSC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brunocassiano.Ingressos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -345,25 +339,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F4716CA6283415FE00988B45 /* Build configuration list for PBXProject "Gym-BSC" */ = {
+		F4F2A0DE2837A79100AA578B /* Build configuration list for PBXProject "Ingressos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F4716CBD2834160300988B45 /* Debug */,
-				F4716CBE2834160300988B45 /* Release */,
+				F4F2A0F52837A7A400AA578B /* Debug */,
+				F4F2A0F62837A7A400AA578B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F4716CBF2834160300988B45 /* Build configuration list for PBXNativeTarget "Gym-BSC" */ = {
+		F4F2A0F72837A7A400AA578B /* Build configuration list for PBXNativeTarget "Ingressos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F4716CC02834160300988B45 /* Debug */,
-				F4716CC12834160300988B45 /* Release */,
+				F4F2A0F82837A7A400AA578B /* Debug */,
+				F4F2A0F92837A7A400AA578B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F4716CA3283415FE00988B45 /* Project object */;
+	rootObject = F4F2A0DB2837A79100AA578B /* Project object */;
 }
