@@ -25,9 +25,20 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wY6-ib-dcF">
                                 <rect key="frame" x="0.0" y="64" width="414" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_alura" translatesAutoresizingMaskIntoConstraints="NO" id="8g5-bJ-7Gh">
+                                        <rect key="frame" x="144.5" y="25" width="125" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="KF5-yU-bOY"/>
+                                            <constraint firstAttribute="width" constant="125" id="bWW-Wu-kvp"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="8g5-bJ-7Gh" firstAttribute="centerY" secondItem="wY6-ib-dcF" secondAttribute="centerY" id="7Pa-A0-TMs"/>
                                     <constraint firstAttribute="height" constant="100" id="RJj-v8-JMg"/>
+                                    <constraint firstItem="8g5-bJ-7Gh" firstAttribute="centerX" secondItem="wY6-ib-dcF" secondAttribute="centerX" id="UmZ-7a-WvO"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informações da sua compra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vgc-wX-4P1">
@@ -37,7 +48,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="atW-KB-zr1">
-                                <rect key="frame" x="0.0" y="206" width="414" height="800"/>
+                                <rect key="frame" x="0.0" y="206" width="414" height="831"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZrA-7g-uau">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="5"/>
@@ -46,7 +57,7 @@
                                             <constraint firstAttribute="height" constant="5" id="JMu-Sg-5sx"/>
                                         </constraints>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SSd-Ni-Edo">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="SSd-Ni-Edo">
                                         <rect key="frame" x="0.0" y="5" width="414" height="130"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="130" id="74A-Ju-TDt"/>
@@ -162,7 +173,7 @@
                                             <constraint firstAttribute="height" constant="5" id="9ML-ek-Jv9"/>
                                         </constraints>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c15-aq-oWx">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bandeiras_cartoes" translatesAutoresizingMaskIntoConstraints="NO" id="c15-aq-oWx">
                                         <rect key="frame" x="0.0" y="568.5" width="414" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="4nk-Nr-FmQ"/>
@@ -254,8 +265,22 @@
                                             <constraint firstAttribute="height" constant="40" id="7Jn-Ui-APO"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6k4-jk-y3x">
+                                        <rect key="frame" x="0.0" y="800" width="414" height="31"/>
+                                        <color key="backgroundColor" red="0.18431372549019609" green="0.67843137254901964" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Comprar">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
                                 </subviews>
                             </stackView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G3r-9M-i4c">
+                                <rect key="frame" x="0.0" y="206" width="414" height="860"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="VgX-g9-ZUI"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Zty-e1-Upm"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -281,6 +306,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bandeiras_cartoes" width="3032" height="398"/>
+        <image name="banner" width="640" height="426"/>
+        <image name="logo_alura" width="335" height="150"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
