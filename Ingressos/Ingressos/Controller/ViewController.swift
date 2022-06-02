@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     //MARK: - Outlets
     
     @IBOutlet weak var imagemBanner: UIImageView!
+    @IBOutlet var textFields: [UITextField]!
     
     
     override func viewDidLoad() {

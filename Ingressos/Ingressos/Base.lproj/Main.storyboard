@@ -326,6 +326,16 @@
                     <size key="freeformSize" width="414" height="1300"/>
                     <connections>
                         <outlet property="imagemBanner" destination="SSd-Ni-Edo" id="7wf-E2-epe"/>
+                        <outletCollection property="textFields" destination="nc9-oB-uuO" collectionClass="NSMutableArray" id="nll-n1-dwd"/>
+                        <outletCollection property="textFields" destination="N5p-PM-y29" collectionClass="NSMutableArray" id="Cyy-gY-TRV"/>
+                        <outletCollection property="textFields" destination="Kbw-lD-Bcd" collectionClass="NSMutableArray" id="MaI-Ox-zDr"/>
+                        <outletCollection property="textFields" destination="H6c-aW-f8S" collectionClass="NSMutableArray" id="XLE-lX-kvh"/>
+                        <outletCollection property="textFields" destination="q8O-3F-x02" collectionClass="NSMutableArray" id="W4T-oe-wMd"/>
+                        <outletCollection property="textFields" destination="DKz-Aj-lcF" collectionClass="NSMutableArray" id="3yv-xr-2Od"/>
+                        <outletCollection property="textFields" destination="jrL-Qt-ptR" collectionClass="NSMutableArray" id="eO0-tv-UCH"/>
+                        <outletCollection property="textFields" destination="wNv-SR-i6g" collectionClass="NSMutableArray" id="f8M-99-ltD"/>
+                        <outletCollection property="textFields" destination="b4P-L0-5rV" collectionClass="NSMutableArray" id="BFF-a6-RzG"/>
+                        <outletCollection property="textFields" destination="2NI-52-u6u" collectionClass="NSMutableArray" id="iXG-aY-ZNf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

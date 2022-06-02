@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F44DF3692848CDE500C16A7C /* ValidaFormulario.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44DF3682848CDE500C16A7C /* ValidaFormulario.swift */; };
 		F4F2A0E72837A79100AA578B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2A0E62837A79100AA578B /* AppDelegate.swift */; };
 		F4F2A0E92837A79100AA578B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2A0E82837A79100AA578B /* SceneDelegate.swift */; };
 		F4F2A0EB2837A79100AA578B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2A0EA2837A79100AA578B /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F44DF3682848CDE500C16A7C /* ValidaFormulario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidaFormulario.swift; sourceTree = SOURCE_ROOT; };
 		F4F2A0E32837A79100AA578B /* Ingressos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ingressos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F2A0E62837A79100AA578B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4F2A0E82837A79100AA578B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F44DF3662848CCBE00C16A7C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4F2A0EA2837A79100AA578B /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F44DF3672848CD3200C16A7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F44DF3682848CDE500C16A7C /* ValidaFormulario.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F4F2A0DA2837A79100AA578B = {
 			isa = PBXGroup;
 			children = (
@@ -57,8 +75,9 @@
 			isa = PBXGroup;
 			children = (
 				F4F2A0E62837A79100AA578B /* AppDelegate.swift */,
+				F44DF3672848CD3200C16A7C /* Model */,
+				F44DF3662848CCBE00C16A7C /* Controller */,
 				F4F2A0E82837A79100AA578B /* SceneDelegate.swift */,
-				F4F2A0EA2837A79100AA578B /* ViewController.swift */,
 				F4F2A0EC2837A79100AA578B /* Main.storyboard */,
 				F4F2A0EF2837A7A400AA578B /* Assets.xcassets */,
 				F4F2A0F12837A7A400AA578B /* LaunchScreen.storyboard */,
@@ -140,6 +159,7 @@
 			files = (
 				F4F2A0EB2837A79100AA578B /* ViewController.swift in Sources */,
 				F4F2A0E72837A79100AA578B /* AppDelegate.swift in Sources */,
+				F44DF3692848CDE500C16A7C /* ValidaFormulario.swift in Sources */,
 				F4F2A0E92837A79100AA578B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
