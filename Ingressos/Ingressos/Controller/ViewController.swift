@@ -21,6 +21,10 @@ class ViewController: UIViewController {
         self.imagemBanner.layer.masksToBounds = true
     }
 
-
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    
 }
 

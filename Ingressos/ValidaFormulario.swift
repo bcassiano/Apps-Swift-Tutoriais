@@ -15,6 +15,7 @@ class ValidaFormulario: NSObject {
                 return false
             }
         }
+        return true
     }
     
 }
